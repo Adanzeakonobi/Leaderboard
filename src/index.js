@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 import addScoresToList from './scoresadd.js';
 import scores from './scorecard.js';
