@@ -1,7 +1,71 @@
-.hello {
-    color: red;
-  }
+body {
+  margin: 15px;
+}
 
-  body {
-    background-color: bisque;
+h1,
+h3 {
+  display: flex;
+}
+
+.title {
+  margin-left: 100px;
+}
+
+.leadermain {
+  display: flex;
+}
+
+section {
+  width: 30%;
+  margin: 0 10%;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 3px solid;
+}
+
+.list-item p {
+  margin: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 250px 0 20px;
+}
+
+.refresh {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.refresh-button {
+  margin: 25px;
+  border: 3px solid black;
+}
+
+.input-field {
+  margin: 10px 0;
+  padding: 5px;
+  border: 3px solid black;
+}
+
+.sub-btn {
+  width: 60px;
+  height: 35px;
+  align-self: flex-end;
+  border: 3px solid black;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(226, 222, 222);
 }

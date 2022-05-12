@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Leaderboard App</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <h1 class="title">Leaderboard</h1>
+    <main class="leadermain">
+        <section>
+            <header class="refresh">
+                <h3>Recent scores</h3>
+                <button id="refresh-btn" class="refresh-button" type="submit">Refresh</button>
+            </header>
+            <ul class="score-details">
+            </ul>
+        </section>
+        <form class="form">
+            <h4>Add your score</h4>
+            <input type="text" id="name" class="input-field" placeholder="Your name" required><br>
+            <input type="text" id="score" class="input-field"  placeholder="Your score" required><br>
+            <button type="submit" value="Submit" id="submit" class="sub-btn">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
