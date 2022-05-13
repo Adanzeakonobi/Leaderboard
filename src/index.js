@@ -1,5 +1,13 @@
 import './style.css';
-import addScoresToList from './scoresadd.js';
-import scores from './scorecard.js';
+import { getScores, sendScores } from './scorecard.js';
 
-scores.forEach((score) => addScoresToList(score));
+document.getElementById('sub-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  sendScores();
+  document.getElementById('name').value = '';
+  document.getElementById('score').value = '';
+});
+
+document.getElementById('refresh-btn').addEventListener('click', () => window.location.reload());
+
+window.addEventListener('load', () => getScores());
