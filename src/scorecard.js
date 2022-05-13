@@ -2,7 +2,7 @@ import addScoresToList from './scoresadd.js';
 
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rOkCCFyBAGoY4dj1LB3S/scores/';
 
-const postScores = async () => {
+const sendScores = async () => {
   const newScore = {
     user: document.getElementById('name').value,
     score: document.getElementById('score').value,
@@ -28,4 +28,4 @@ const getScores = async () => {
   displaySores(scoreList);
 };
 
-export { getScores, postScores };
+export { getScores, sendScores };

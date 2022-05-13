@@ -1,9 +1,9 @@
 import './style.css';
-import { getScores, postScores } from './scorecard.js';
+import { getScores, sendScores } from './scorecard.js';
 
 document.getElementById('sub-btn').addEventListener('click', (e) => {
   e.preventDefault();
-  postScores();
+  sendScores();
   document.getElementById('name').value = '';
   document.getElementById('score').value = '';
 });
